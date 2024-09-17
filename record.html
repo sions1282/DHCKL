@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>이야기 나누기</title>
+    <meta charset="utf-8">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const message = document.getElementById("message").value;
+            alert("이야기가 제출되었습니다. 감사합니다!");
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>생각난 이야기가 있다면 나눠주세요!</h1>
+    <p>이야기는 검토 후 연구 자료로 활용될 수 있습니다. 소중한 이야기를 나눠주셔서 감사합니다.</p>
+    <form onsubmit="handleSubmit(event)">
+        <label for="message">텍스트로 이야기를 나눠주세요!</label><br><br>
+        <textarea id="message" name="message" rows="10" cols="50" placeholder="여기에 텍스트를 입력하세요"></textarea><br><br>
+        <button type="submit">제출하기</button>
+    </form>
+    <br>
+    <button onclick="location.href='index.html'" target="_self" title="메인">돌아가기</button>
+</body>
+
+</html>
